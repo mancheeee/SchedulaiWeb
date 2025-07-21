@@ -1,18 +1,22 @@
 # SchedulaiWeb
 SchedulaiWeb is a smart AI-powered calendar assistant that uses natural language and LLMs to schedule, update, and manage your Google Calendar events — all in real time, with secure OAuth login and a live in-app calendar viewer.
 
+<br>
+<p align="center">
 <img width="676" height="401" alt="image" align="center" src="https://github.com/user-attachments/assets/e5849d76-a27d-4cd9-9226-6eb9c662d2c7" />
-
+</p>
+<br>
 
 
 # 🧠 SchedulaiWeb — Smart AI Calendar Assistant
 
 **SchedulaiWeb** is an intelligent calendar assistant that lets users schedule, update, delete, and view events using natural language — powered by **LLMs and Google Calendar API**. Designed with a FastAPI backend and MongoDB for secure token storage, Schedulai turns everyday text like _“Book a call with Sarah tomorrow at 3”_ into actual calendar actions.
 
-
+<br>
 <p align="center">
 <img width="1268" height="627" alt="image"  src="https://github.com/user-attachments/assets/c5242c47-2e25-45dc-baf7-c21a1b9dad9c" />
 </p>
+</br>
 
 ---
 
