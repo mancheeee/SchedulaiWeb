@@ -1,4 +1,5 @@
-# SchedulaiWeb
+# SchedulaiWeb - AI powered Scheduling chatbot
+
 SchedulaiWeb is a smart AI-powered calendar assistant that uses natural language and LLMs to schedule, update, and manage your Google Calendar events — all in real time, with secure OAuth login and a live in-app calendar viewer.
 
 <br>
