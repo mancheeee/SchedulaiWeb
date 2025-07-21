@@ -1,13 +1,14 @@
 # SchedulaiWeb
 SchedulaiWeb is a smart AI-powered calendar assistant that uses natural language and LLMs to schedule, update, and manage your Google Calendar events — all in real time, with secure OAuth login and a live in-app calendar viewer.
 
-<img width="657" height="461" alt="image" src="https://github.com/user-attachments/assets/c01f0845-9e9a-43ac-ac06-ccb9af8ff7b5" />
+<img width="676" height="401" alt="image" position="center" src="https://github.com/user-attachments/assets/e5849d76-a27d-4cd9-9226-6eb9c662d2c7" />
+
 
 
 # 🧠 SchedulaiWeb — Smart AI Calendar Assistant
 
 **SchedulaiWeb** is an intelligent calendar assistant that lets users schedule, update, delete, and view events using natural language — powered by **LLMs and Google Calendar API**. Designed with a FastAPI backend and MongoDB for secure token storage, Schedulai turns everyday text like _“Book a call with Sarah tomorrow at 3”_ into actual calendar actions.
-<img width="1280" height="624" alt="image" src="https://github.com/user-attachments/assets/08ccb700-86a0-4037-8e58-b7fd5de477be" />
+<img width="1268" height="627" alt="image" position="center" src="https://github.com/user-attachments/assets/c5242c47-2e25-45dc-baf7-c21a1b9dad9c" />
 
 ---
 
@@ -90,7 +91,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 
 ---------------------------------------------
-**These are excluded from Git for security:
+**These are excluded from Git for security:**
 
 .env
 
@@ -98,7 +99,7 @@ credentials.json
 
 token.json
 
-__pycache__, .venv, etc.**
+__pycache__, .venv, etc.
 --------------------------------------------
 ⚠️ Final Note
 There may be some errors when first running the app due to the removal of sensitive files like credentials or tokens. These are easy to troubleshoot by:
