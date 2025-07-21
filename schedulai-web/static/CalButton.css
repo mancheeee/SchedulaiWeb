@@ -1,0 +1,150 @@
+/* 📍 Calendar Toggle Button (Bottom Left, Teal Accents) */
+#calendar-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  height: 65px;
+  width: 70px;
+  background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+  color: white;
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 18px #67e8f9, 0 0 12px #0ea5e9;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calendar-toggle:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 0 30px #38bdf8, 0 0 16px #0ea5e9;
+}
+
+/* 📅 Calendar Popup Styling (Glassmorphic + Teal Glow) */
+#calendar-popup {
+  position: fixed;
+  bottom: 180px;
+  left: 20px;
+  width: 700px;
+  max-height: 500px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 2rem;
+  box-shadow:
+    0 0 20px rgba(13, 235, 255, 0.4),
+    0 0 30px rgba(13, 235, 255, 0.3),
+    inset 0 0 6px rgba(0, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  animation: fadeInPopup 0.4s ease;
+  overflow: hidden;
+
+}
+
+/* Show calendar */
+#calendar-popup.show {
+  display: block;
+}
+
+/* 🗓️ Calendar Header */
+#calendar-header {
+  background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+  color: black;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 3px cyan;
+  border-radius: 1rem;
+  margin-bottom: 16px;
+}
+
+/* 🧊 Calendar Container */
+#calendar {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  height: calc(100% - 80px); /* fills below the header */
+  scroll-behavior: smooth;
+  
+  max-height: 500px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* 📆 FullCalendar Day Frame */
+.fc-daygrid-day-frame {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 🎯 Event Styling */
+.fc-event {
+  border: 2px solid #0ea5e9 !important;
+  border-radius: 8px;
+  background-color: rgba(14, 165, 233, 0.15) !important;
+  color: #e0fefe;
+  transition: transform 0.2s ease, background 0.2s ease;
+  text-shadow: 0 0 3px #0ef;
+}
+
+.fc-event:hover {
+  transform: scale(1.03);
+  background-color: rgba(14, 165, 233, 0.2) !important;
+}
+
+/* 🧬 Calendar Grid */
+.fc td, .fc th {
+  border: 1px solid rgba(0, 255, 255, 0.08);
+}
+
+.fc-col-header-cell {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+/* ✅ Today's Highlight */
+.fc-day-today {
+  background-color: rgba(0, 255, 255, 0.08);
+  border: 1px solid #00ffff;
+}
+
+/* 🖱️ Hover Day */
+.fc-daygrid-day:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: background 0.2s ease;
+}
+
+/* 🔁 Fade Animation */
+@keyframes fadeInPopup {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#calendar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+#calendar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+.fc-scrollgrid {
+  border-top: 1px solid black !important;
+  border-left: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  border-right: 1px solid black !important;
+
+}

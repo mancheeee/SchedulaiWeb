@@ -1,0 +1,73 @@
+/* Guide Toggle Button (Top Right) */
+#guide-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: 65px;
+  width: 70px;
+  background: linear-gradient(135deg, #8a2be2, #7f5af0);
+  color: white;
+  font-size: 26px;
+  padding: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 18px #a78bfa;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#guide-toggle:hover {
+  box-shadow: 0 0 30px #c084fc;
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Guide Popup Box */
+#guide-popup {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 350px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  font-size: 15px;
+  animation: fadeInPopup 0.4s ease;
+}
+
+#guide-popup.show {
+  display: block;
+}
+
+#guide-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #6a0dad;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+#guide-content code {
+  background: #f3f3ff;
+  display: block;
+  margin-top: 4px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+#guide-body {
+  padding: 16px;
+  font-size: 15px;
+  color: #333;
+  overflow-y: auto;
+  flex: 1;
+}

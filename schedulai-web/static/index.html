@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Schedulai Chatbot</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+
+  <link rel="stylesheet" href="/static/guide.css" />
+  <link rel="stylesheet" href="/static/CalButton.css" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.css" rel="stylesheet" />
+  
+ 
+</head>
+<body>
+
+  
+
+ <div class="solar-wrapper">
+  <div class="container">
+    <div class="sun"></div>
+    <div class="earth">
+      <div class="moon"></div>
+    </div>
+    <div class="jupiter"></div>
+  </div>
+</div>
+
+
+
+
+  <div id="chat-toggle" onclick="toggleChat()">💬</div>
+
+  <div id="chat-popup">
+
+
+    <div id="chat-header">
+  ✨ Schedulai Assistant
+  <button id="fullscreen-btn" title="Toggle Fullscreen">⛶</button></div>
+
+
+    <div id="chat-log"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="Ask me anything..." />
+      <button type="submit" id="send-btn">Send</button>
+      <div id="loading" style="display:none; text-align:center; padding:10px;">⏳ Working...</div>
+ 
+
+      <button onclick="loadBookedEvents()" type="button" id="booked-btn">📅 Show Booked Events</button>
+    </form>
+  </div>
+
+
+
+  <!-- Guide Button -->
+<div id="guide-toggle">?</div>
+
+<!-- Guide Popup -->
+<div id="guide-popup">
+  <div id="guide-header">📘 Prompt Guide</div>
+  <div id="guide-content">
+    <p><strong>🗓 Schedule a Meeting:</strong><br>
+      <code>Schedule a call with Alex on Friday 4pm to 5pm</code></p>
+    <p><strong>📅 See Free Slots:</strong><br>
+      <code>Show me available times tomorrow</code></p>
+    <p><strong>❌ Delete Event:</strong><br>
+      <code>Delete event 'Meeting' on Friday 4pm</code></p>
+  </div>
+</div>
+
+
+<!-- Calendar Button -->
+<div id="calendar-toggle">📅</div>
+
+<!-- Calendar Popup -->
+<div id="calendar-popup">
+  <div id="calendar-header">
+    📆 Google Calendar
+    <span id="calendar-close" style="float:right; cursor:pointer;">❌</span>
+  </div>
+  <div id="calendar" style="max-height: 500px; overflow: auto;"></div>
+</div>
+
+
+ <script src="/static/scripts.js"></script>
+  <script src="/static/guide.js"></script>
+  <script src="/static/CalButton.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+  
+</body>
+</html>
+
+
+
